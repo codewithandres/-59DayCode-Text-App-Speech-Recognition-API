@@ -40,9 +40,9 @@ const speechToText = () => {
 
     // Evento que se dispara cuando se obtiene un resultado
     recognition.onresult = event => {
-      const speechResult = event.results.at(0).at(0).transcript;
+      const speechResult = event.results[0][0].transcript;
       //detectamos cuando los resultados son finales
-      if (event.results.at(0).isFinal) {
+      if (event.results[0].isFinal) {
         result.innerHTML += ` ${speechResult}`;
         result.querySelector("p").remove();
       } else {
