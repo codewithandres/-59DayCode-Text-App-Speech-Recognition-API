@@ -2,10 +2,10 @@
 
 :root {
     --primary-color: #356aff;
-    --bg-color: hsl(228, 35%, 8%);
-    --text-color: hsl(0, 29%, 93%);
+    --bg-color: #fafafa;
+    --text-color: #000;
     --light-text-color: #a5a5a5;
-    --body-bg-color: #010114;
+    --body-bg-color: #e7e7e7;
 }
 
 * {
@@ -29,6 +29,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     background-color: var(--bg-color);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .container .heading {
@@ -43,8 +44,6 @@ body {
     border: 1px solid var(--light-text-color);
     border-radius: 5px;
     outline: none;
-    background-color: transparent;
-    color: var(--light-text-color);
 }
 
 .container .options div:not(:last-child) select {
@@ -79,7 +78,7 @@ body {
     outline: none;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     color: #fff;
